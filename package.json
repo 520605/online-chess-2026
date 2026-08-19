@@ -1,0 +1,11 @@
+{
+  "name": "online-chinese-chess",
+  "version": "1.0.0",
+  "description": "双人联机中国象棋",
+  "scripts": {
+    "dev": "netlify dev",
+    "build": "echo 'Static site, no build needed'"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
