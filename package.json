@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "双人联机中国象棋",
   "scripts": {
-    "dev": "netlify dev",
-    "build": "echo 'Static site, no build needed'"
+    "build": "echo done"
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "dependencies": {
+    "@netlify/blobs": "^9.0.0"
+  }
 }
