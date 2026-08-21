@@ -1259,7 +1259,7 @@ window.addEventListener('resize', () => {
         if (res.ok) {
           gameState.roomId=data.roomId; gameState.role=data.role; gameState.board=data.board;
           gameState.turn=data.turn; gameState.gameStatus='waiting';
-          document.getElementById('waitingRoomId').textContent=data.roomId;
+          document.getElementById('waiting-room-id').textContent=data.roomId;
           document.getElementById('waitingOverlay').classList.add('active');
           document.getElementById('startButtons').style.display='none';
           startPolling();
@@ -1353,7 +1353,7 @@ window.addEventListener('resize', () => {
 
     // ==================== UI ====================
     function updateUI() {
-      document.getElementById('roomIdDisplay').textContent = gameState.roomId || '-';
+      document.getElementById('display-room-id').textContent = gameState.roomId || '-';
       document.getElementById('roleDisplay').textContent = gameState.role==='red' ? '红方' : '黑方';
       document.getElementById('roleDisplay').style.color = gameState.role==='red' ? '#ff6b6b' : '#a0a0a0';
       const td = document.getElementById('turnDisplay');
